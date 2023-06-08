@@ -1,62 +1,547 @@
-<!DOCTYPE html>
-<html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>UI UX design Rules and Strategy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png">
 
-.bgimg {
-  background-image: url('https://img.freepik.com/free-photo/india-flag-wrinkled-dark-background-3d-render_1379-583.jpg?w=2000&t=st=1677456782~exp=1677457382~hmac=0f6c6ca449a12dae977e8b1c98948d7588a68bed4e6fecb5766b37f6a338ce56');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
+        <!--Google Font link-->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
+        <link rel="stylesheet" href="assets/css/swiper.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/iconfont.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/uiuxnav.css">
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-<body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>PRATHAMCHANDE</p>
-  </div>
-  <div class="middle">
-    <h1>Under maintenance</h1>
-    <hr>
-    
-  </div>
-  <div class="bottomleft">
-    <p>Will update soon</p>
-  </div>
-</div>
+        <!--For Plugins external css-->
+        <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-</body>
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse">
+
+
+        <!-- Preloader -->
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                </div>
+            </div>
+        </div><!--End off Preloader -->
+
+
+        <div class="culmn">
+            <!--Home page style-->
+
+
+            <nav class="navbar navbar-default uiuxnav navbar-fixed white no-background">
+                <div class="container">  
+
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li><a href="https://www.facebook.com/PRATHAMCHANDE"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/prathamchande/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/prathamchande"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>        
+                    <!-- End Atribute Navigation -->
+
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="#home">
+                            <img src="assets/images/footer-logo.jpg" class="logo logo-display" alt="">
+                            <img src="assets/images/logo.jpg" class="logo logo-scrolled" alt="">
+                        </a>
+
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- navbar menu -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-center">
+                            <li><a href="#home">Home</a></li>                    
+                            <li><a href="#uiUxDesign">UI/UX Design</a></li>
+                            <li><a href="#uiUxstrategy">UI/UX Strategy</a></li>
+                            <li><a href="#uiDevlopments">UI Devlopments</a></li>
+                            <li><a href="#reviews">UX Quotes</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>   
+            </nav>
+
+            <!--Home Sections-->
+
+            <section id="home" class="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_home">
+                            <div class="col-md-6">
+                                <div class="home_text">
+                                    <h1 class="text-white">What is a UI/UX strategy and rules?</h1>
+                                </div>
+
+                                <div class="home_btns m-top-40">
+                                    <a href="#uiUxDesign" class="btn btn-danger m-top-20">UX Design</a>
+                                    <a href="#uiUxstrategy" class="btn btn-primary m-top-20">UX strategy</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="phone_one phone_attr1 text-center sm-m-top-50">
+                                    <img class="shadow_radius" src="assets/images/phone1.jpg" alt="" />
+                                    <div class="attr_deg">BX</div>
+                                    <div class="attr_rio text-uppercase">CX</div>
+                                    <div class="attr_sun text-uppercase text-white">UI</div>
+                                    <div class="attr_lon text-uppercase text-white">UX</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="scrooldown">
+                            <a href="#uiUxDesign"><i class="fa fa-chevron-down"></i></a>
+                        </div>
+
+                    </div><!--End off row-->
+                </div><!--End off container -->
+            </section> <!--End off Home Sections-->
+
+
+
+            <!--Featured Section-->
+            <section id="uiUxDesign" class="uiUxDesign">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_uiUxDesign p-top-100">
+                            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                                <div class="head_title text-center">
+                                    <h2>What is UI / UX Design?</h2>
+                                    <h5>User interface/user experience design is one of the hottest areas in technology today. But what exactly is it? Read our introduction and learn about the people who practice it and the tools used.</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="uiUxDesign_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                        <i class="icon icon-diamond6"></i>
+                                    </div>
+                                    <div class="f_item_text">
+                                        <h3>Research </h3>
+                                        <p> Research is a key UX design skill. Designers must make actionable insights from the data they collect, both in the initial phases and when testing with real people.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="uiUxDesign_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                        <i class="icon icon-layers2"></i>
+                                    </div>
+                                    <div class="f_item_text">
+                                        <h3>Problem-solving</h3>
+                                        <p> UX designers explore many different approaches to solving a specific user problem in a process known as “ideate.” </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="uiUxDesign_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                        <i class="icon icon-business-32"></i>
+                                    </div>
+                                    <div class="f_item_text">
+                                        <h3>Communication </h3>
+                                        <p>Communication is crucial as UX design is a highly collaborative process. UX designers also need a level of empathy that lets them look at a product from the user’s point of view.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End off row -->
+                </div><!-- End off container -->
+            </section><!-- End off Featured Section-->
+
+
+
+
+            <section id="uiUxstrategy" class="uiUxstrategy">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_screen">
+                            <div class="col-md-8 col-md-offset-2 col-sm-12">
+                                <div class="head_title text-center">
+                                    <h2> UX strategy</h2>
+                                    <p>So, a UX strategy should present a clear statement of the product vision and the results that we want to achieve for the business and end-users</p>
+                               <h5>6 steps to create a UX strategy</h5>
+                                </div>
+                            </div>
+
+                            <!-- Screen01-->
+                            <div class="screen01 roomy-50">
+                                <div class="col-md-6">
+                                    <div class="screen01_img text-center">
+                                        <div class="attr_cloudy text-white">Evaluate</div>
+                                        <div class="attr_deg2 text-white">Startegy</div>
+                                        <img src="assets/images/screen01.png" alt="" />
+                                        <h1 class="cloudy">Creating a UX Strategy</h1>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="screen01_content m-top-100">
+                                        <div class="screen01_content_img ">
+                                            <img src="assets/images/cloud1.png" alt="" />
+                                        </div>
+                                        <h2 class="m-top-40"> Evaluate the current state</h2>
+                                        <p class="m-top-20">It is very useful if there is a business plan that you can rely on. But even if there is none, you will have to fill in the gaps of missing data through interviews with stakeholders. </p>
+
+                                        <ul class="m-top-50">
+                                            <li class="text-center">Common tasks that the business should solve. For example, test the effectiveness of a business model, win over users’ loyalty, retain customers, and so on. Understanding such basic goals allows you to set the right focus from the very beginning. UX strategy cannot (and should not) be created without considering the needs of the business.</li>
+                                            <li class="text-center">Problems that you already know about. For example, user churn increases, annual recurring revenue does not grow. </li>
+                                            <li class="text-center">The resources you have.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--End off Screen01-->
+
+                            <!-- Screen02-->
+                            <div class="screen02 roomy-50 m-top-100">
+                                <div class="col-md-6 col-md-push-6">
+                                    <div class="screen02_img text-center">
+                                        <div class="attr_sun2 text-white">Concept</div>
+                                        <div class="attr_deg3 text-white">Vision</div>
+                                        <img src="assets/images/screen02.png" alt="" />
+                                        <h1 class="sunny">UX-vision</h1>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-pull-6">
+                                    <div class="screen02_content m-top-100">
+                                        <div class="screen02_content_img ">
+                                            <img src="assets/images/sun1.png" alt="" />
+                                        </div>
+                                        <h2 class="m-top-40">Set your goals, UX vision, and proof of concept</h2>
+                                        <p class="m-top-20">Once it becomes clear what is happening with the product and with the business right now, it's time to think about how you would like the product to be perceived in the future. </p>
+
+                                            <ul class="m-top-50">
+                                                <li class="text-center">We adopt the strategy for a certain period of time. It can be 6 months, after which we hold a retrospective and discuss whether it needs to be updated or you can take a longer period</li>
+                                                <li class="text-center">If you still don’t have your user personas defined, you can think of your target audience (still, it is not that effective).</li>
+                                                <li class="text-center">focus area is to discuss with the team for whom exactly they solve this or that issue or create a new feature.</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div><!--End off Screen02-->
+
+                            <!-- Screen03-->
+                            <div class="screen03 roomy-50 m-top-100">
+                                <div class="col-md-6">
+                                    <div class="screen03_img text-center">
+                                        <div class="attr_rainy2 text-white">Rainy</div>
+                                        <div class="attr_deg4 text-white">9 &deg;</div>
+                                        <img src="assets/images/screen03.png" alt="" />
+                                        <h1 class="rainy">Rainy</h1>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="screen03_content m-top-100">
+                                        <div class="screen03_content_img ">
+                                            <img src="assets/images/rainy1.png" alt="" />
+                                        </div>
+                                        <h2 class="m-top-40">Services and products</h2>
+                                        <p class="m-top-20">Focus on services/products is relevant for big companies, in case you have a small project your focus area will be parts of a product or interaction stages. To find this focus area we should get back to the two first steps - business issues and goals.</p>
+
+                                            <ul class="m-top-50">
+                                                <li class="text-center">If the product performs only one function there probably will be no problems with the allocation of resources. But what if there is more than one feature, and besides, users at different interaction stages use different functions, your team faces a problem of what to do first: design onboarding, work on increasing conversions to paid subscriptions, or develop new uiUxDesign. </li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div><!--End off Screen03-->
+
+
+                            
+                            <!-- Screen04-->
+                            <div class="screen04 roomy-50 m-top-100">
+                                <div class="col-md-6 col-md-push-6">
+                                    <div class="screen02_img text-center">
+                                        <div class="attr_sun2 text-white">Concept</div>
+                                        <div class="attr_deg3 text-white">Vision</div>
+                                        <img src="assets/images/screen04.png" alt="" />
+                                        <h1 class="sunny">UX-vision</h1>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-pull-6">
+                                    <div class="screen04_content m-top-100">
+                                        <div class="screen04_content_img ">
+                                            <img src="assets/images/sun1.png" alt="" />
+                                        </div>
+                                        <h2 class="m-top-40">Develop a plan</h2>
+                                        <p class="m-top-20">Everything we talked about before had a single purpose: to understand what actions to take in order to reach your final goal. </p>
+
+                                            <ul class="m-top-50">
+                                               <li class="text-center"> Conduct user research</li>
+<li class="text-center">Develop user personas (or validate existing ones).</li>
+<li class="text-center">Create a prototype.</li>
+<li class="text-center">Start usability testing on prototypes.</li>
+<li class="text-center">Develop a design system.</li>
+<li class="text-center">Conduct the content audit and align it with the strategy.</li>
+ </ul>
+                                    </div>
+                                </div>
+                            </div><!--End off Screen04-->
+
+                        </div>
+                    </div><!--End off row-->
+                </div><!--End off container-->
+            </section><!--End off Screen01 Area Section -->
+
+
+
+            
+            <section id="uiDevlopments">
+                <div class="container">
+                
+                    <div class="row">
+                        <div class="main_drag roomy-50">
+                            <div class="col-md-12">
+                                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                                    <div class="head_title text-center">
+                                        <h2>Devloped webpage and portfolio</h2>
+                                        <h5>Check out what we devloped till...! Will adding more soon</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <!-- <div class="swiper-slide" style="background-image:url(assets/images/drag1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(assets/images/drag3.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(assets/images/drag2.png)"></div> -->
+                                        <div class="swiper-slide">
+                                            
+                                            <iframe class="iframeB" src="https://prathamchande.github.io/">  </iframe>
+                                            <a class="aClickLink" href="https://prathamchande.github.io/">Click or Swap here</a> 
+                                        </div>
+                                        <div class="swiper-slide">
+                                            
+                                            <iframe class="iframeB" src="https://www.gamadiaschool.org/">  </iframe>
+                                            <a class="aClickLink" href="https://www.gamadiaschool.org/">Click or Swap here</a> 
+                                        </div>
+                                        <div class="swiper-slide">
+                                            
+                                            <iframe class="iframeB" src="https://bengalleeschool.edu.page/">  </iframe>
+                                            <a class="aClickLink" href="https://bengalleeschool.edu.page/">Click or Swap here</a> 
+                                        </div>
+                                        <div class="swiper-slide">
+                                            
+                                            <iframe class="iframeB" src="https://bhardaschool-fort.com/">  </iframe>
+                                            <a class="aClickLink" href="https://bhardaschool-fort.com/">Click or Swap here</a> 
+                                        </div>
+                                        <div class="swiper-slide">
+                                            
+                                            <iframe class="iframeB" src="https://www.pandayschool.com/">  </iframe>
+                                            <a class="aClickLink" href="https://www.pandayschool.com/">Click or Swap here</a> 
+                                        </div>
+                                        <div class="swiper-slide">
+                                            
+                                            <iframe class="iframeB" src="https://krcama.org/">  </iframe>
+                                            <a class="aClickLink" href="https://krcama.org/">Click or Swap here</a> 
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            
+                                            <iframe class="iframeB" src="https://multibusiness.in/">  </iframe>
+                                            <a class="aClickLink" href="https://multibusiness.in/">Click or Swap here</a> 
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            
+                                            <iframe class="iframeB" src="https://tranceinteriors.com/">  </iframe>
+                                            <a class="aClickLink" href="https://tranceinteriors.com/">Click or Swap here</a> 
+                                        </div>
+
+
+                                        <div class="swiper-slide">
+                                            
+                                            <iframe class="iframeB" src="https://adxfactory.com/">  </iframe>
+                                            <a class="aClickLink" href="https://adxfactory.com/">Click or Swap here</a> 
+                                        </div>
+
+ 
+                                        <div class="swiper-slide">
+                                            
+                                            <iframe class="iframeB" src="https://prathamchande.github.io/PC2/">  </iframe>
+                                            <a class="aClickLink" href="https://prathamchande.github.io/PC2/">Click or Swap here</a> 
+                                        </div> 
+
+                                    
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--People Section-->
+            <section id="reviews" class="reviews m-top-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_reviews">
+                            <div class="col-md-8 col-md-offset-2 col-sm-12">
+                                <div class="head_title text-center">
+                                    <h2>UX design quotes enlighten and inspire you!</h2>
+                                    <h5>Quotes</h5>
+                                </div>
+                            </div>
+
+                            <div class="reviews_content">
+                                <div class="col-md-6">
+                                    <div class="reviews_item m-top-40">
+                                        <div class="reviews_item_icon pull-left">“</div>
+                                        <h3>People ignore design that ignores people</h3>
+                                        <h5> Frank Chimero, Designer</h5>
+                                        <div class="reviews_item_icon1 pull-right text-right">“</div>
+                                    </div>
+                                </div><!-- End off col-md-6 -->
+
+                                <div class="col-md-6">
+                                    <div class="reviews_item m-top-40">
+                                        <div class="reviews_item_icon pull-left">“</div>
+                                        <h3>When UX doesn’t consider ALL users, shouldn’t it be known as “SOME User Experience” or… SUX?</h3>
+                                        <h5>Billy Gregory, Senior Accessibility Engineer</h5>
+                                        <div class="reviews_item_icon1 pull-right text-right">“</div>
+                                    </div>
+                                </div><!-- End off col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="reviews_item m-top-40">
+                                        <div class="reviews_item_icon pull-left">“</div>
+                                        <h3>The next big thing is the one that makes the last big thing usable.</h3>
+                                        <h5>Blake Ross, Co-creator of Mozilla Firefox</h5>
+                                        <div class="reviews_item_icon1 pull-right text-right">“</div>
+                                    </div>
+                                </div><!-- End off col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="reviews_item m-top-40">
+                                        <div class="reviews_item_icon pull-left">“</div>
+                                        <h3>Rule of thumb for UX: More options, more problems.</h3>
+                                        <h5>Scott Belsky, Chief Product Officer</h5>
+                                        <div class="reviews_item_icon1 pull-right text-right">“</div>
+                                    </div>
+                                </div><!-- End off col-md-6 -->
+
+                            </div>
+                        </div><!-- End off Main People -->
+                    </div><!-- End off row -->
+                </div><!-- End off container -->
+            </section><!-- End off People Section-->
+
+
+         
+            <!-- scroll up-->
+            <div class="scrollup">
+                <a href="#"><i class="fa fa-chevron-up"></i></a>
+            </div><!-- End off scroll up -->
+            
+            
+            <footer id="footer" class="footer bg-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="navbar navbar-default uiuxnav footer-menu no-background">
+                                <div class="container">  
+
+                                    <!-- Start Atribute Navigation -->
+                                    <div class="attr-nav">
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/PRATHAMCHANDE"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/prathamchande/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/prathamchande"><i class="fa fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>        
+                                    <!-- End Atribute Navigation -->
+
+
+                                    <!-- Start Header Navigation -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-footer">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                        <a class="navbar-brand" href="#home"><img src="assets/images/footer-logo.jpg" class="logo" alt=""></a>
+                                    </div>
+                                    <!-- End Header Navigation -->
+
+                                    <!-- navbar menu -->
+                                    <div class="collapse navbar-collapse" id="navbar-footer">
+                                        <ul class="nav navbar-nav navbar-center">
+                                            <li><a href="#home">Home</a></li>                    
+                                            <li><a href="#uiUxDesign">UI/UX Design</a></li>
+                                            <li><a href="#uiUxstrategy">UI/UX Strategy</a></li>
+                                            <li><a href="#uiDevlopments">UI Devlopments</a></li>
+                                            <li><a href="#reviews">UX Quotes</a></li>
+                                        </ul>
+                                    </div><!-- /.navbar-collapse -->
+                                </div>   
+                            </nav>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="col-md-12">
+                            <div class="main_footer text-center p-top-40 p-bottom-30">
+                                <p class="wow fadeInRight" data-wow-duration="1s">
+                                    Made with 
+                                    <i class="fa fa-heart"></i>
+                                    by 
+                                    <a target="_blank" href="https://prathamchande.github.io/">PRATHAMESH CHANDE</a> 
+                                    2023. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+        </div>
+
+        <!-- JS includes -->
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/js/swiper.min.js"></script>
+        <script src="assets/js/jquery.collapse.js"></script>
+        <script src="assets/js/uiuxnav.js"></script>
+
+
+
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
